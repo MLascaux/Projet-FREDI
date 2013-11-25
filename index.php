@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once("function/user.php");
 
 // Get current page
 if(!isset($_GET['p']))
@@ -13,7 +14,7 @@ else
 
 if(empty($currentPage))
 {
-    $currentPage = "index";
+	$currentPage = "index";
 }
 
 ?>
@@ -41,7 +42,7 @@ if(empty($currentPage))
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="../" class="navbar-brand">FREDI</a>
+                <a href="./" class="navbar-brand">FREDI</a>
             </div>
             <!-- Permet d'appeler un menu different en fonction de l'utilisateur -->
             <?php
@@ -62,6 +63,8 @@ if(empty($currentPage))
             else
             {
                 include("menu.php");
+				if($currentPage == "index")
+					$currentPage = "connect";
             }
 
             ?>
