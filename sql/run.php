@@ -5,7 +5,7 @@
 		$serveur = "localhost";
 		$user = "root";
 		$password = "";
-		$BDD = "ProjetFredi";
+		$BDD = "fredi";
 		
 		$cnx = new mysqli($serveur, $user, $password, $BDD);
 		$result = $cnx->query($sql);

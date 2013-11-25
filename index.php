@@ -2,6 +2,9 @@
 session_start();
 include_once("function/user.php");
 
+include("sql/run.php");
+include("function/functions.php");
+
 // Get current page
 if(!isset($_GET['p']))
 {
@@ -47,7 +50,7 @@ if(empty($currentPage))
             <!-- Permet d'appeler un menu different en fonction de l'utilisateur -->
             <?php
 
-            include_once("function/user.php");
+            include_once("function/functions.php");
 
             if(islogin())
             {
