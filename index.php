@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once("function/user.php");
 
 include("sql/run.php");
 include("function/functions.php");
