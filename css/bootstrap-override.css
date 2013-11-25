@@ -1,0 +1,16 @@
+
+.navbar {
+    background: #ffffff;
+    border-color: #000000;
+}
+
+.navbar .navbar-nav > .active > a {
+    background: #eeeeee;
+    color: black;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav > li > a {
+    color: black;
+    font-weight: 200;
+}

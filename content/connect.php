@@ -1,1 +1,9 @@
-CONNECT
+<form class="form-signin">
+    <h2 class="form-signin-heading">Connectez-vous pour accéder au programme FREDI</h2>
+    <input type="text" class="form-control" placeholder="Adresse e-mail" required="" autofocus="">
+    <br/>
+    <input type="password" class="form-control" placeholder="Mot de passe" required="">
+    <br/>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Connexion !</button>
+    <a class="pull-right" href="#">Mot de passe oublié ?</a>
+</form>
